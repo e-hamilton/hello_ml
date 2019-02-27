@@ -41,7 +41,7 @@ if __name__ == "__main__":
 
 	# Run Logistic Regression to get LR model and prediction
 	LR, predicted = spinnerTask(LR_run, 'lbfgs', dataset, 
-								message=('Modeling data this may take a few ' +
+								message=('Modeling data (this may take a few ' +
 								'minutes)...'))
 
 	total_score = LR.score(dataset.test.x, dataset.test.y)
